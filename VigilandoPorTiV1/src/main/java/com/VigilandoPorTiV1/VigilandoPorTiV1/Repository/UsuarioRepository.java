@@ -1,6 +1,6 @@
-package com.hackaton.hackaton2024.Repository;
+package com.VigilandoPorTiV1.VigilandoPorTiV1.Repository;
 
-import com.hackaton.hackaton2024.Entity.Usuario;
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Entity.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

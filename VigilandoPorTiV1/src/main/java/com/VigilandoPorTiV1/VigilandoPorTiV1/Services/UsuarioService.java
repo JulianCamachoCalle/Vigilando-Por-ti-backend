@@ -1,7 +1,8 @@
-package com.hackaton.hackaton2024.Services;
+package com.VigilandoPorTiV1.VigilandoPorTiV1.Services;
 
-import com.hackaton.hackaton2024.Entity.Usuario;
-import com.hackaton.hackaton2024.Entity.UsuarioRol;
+
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Entity.Usuario;
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Entity.UsuarioRol;
 
 import java.util.Set;
 

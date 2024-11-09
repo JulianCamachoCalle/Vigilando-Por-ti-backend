@@ -1,10 +1,10 @@
-package com.hackaton.hackaton2024.Services.impl;
+package com.VigilandoPorTiV1.VigilandoPorTiV1.Services.impl;
 
-import com.hackaton.hackaton2024.Entity.Usuario;
-import com.hackaton.hackaton2024.Entity.UsuarioRol;
-import com.hackaton.hackaton2024.Repository.RolRepository;
-import com.hackaton.hackaton2024.Repository.UsuarioRepository;
-import com.hackaton.hackaton2024.Services.UsuarioService;
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Entity.Usuario;
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Entity.UsuarioRol;
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Repository.RolRepository;
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Repository.UsuarioRepository;
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.hackaton.hackaton2024.Entity;
+package com.VigilandoPorTiV1.VigilandoPorTiV1.Entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

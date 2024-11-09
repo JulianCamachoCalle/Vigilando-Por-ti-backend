@@ -1,9 +1,9 @@
-package com.hackaton.hackaton2024.Controller;
+package com.VigilandoPorTiV1.VigilandoPorTiV1.Controller;
 
-import com.hackaton.hackaton2024.Entity.Rol;
-import com.hackaton.hackaton2024.Entity.Usuario;
-import com.hackaton.hackaton2024.Entity.UsuarioRol;
-import com.hackaton.hackaton2024.Services.UsuarioService;
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Entity.Rol;
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Entity.Usuario;
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Entity.UsuarioRol;
+import com.VigilandoPorTiV1.VigilandoPorTiV1.Services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
