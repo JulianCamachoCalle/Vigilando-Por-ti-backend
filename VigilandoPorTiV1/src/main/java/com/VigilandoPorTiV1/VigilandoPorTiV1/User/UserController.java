@@ -20,6 +20,12 @@ public class UserController {
         return ResponseEntity.ok(userDTO);
     }
 
+    @PostMapping
+    public ResponseEntity<UserResponse> registerUser(@RequestBody UserRequest userRequest) {
+        UserResponse userResponse = userService.registerUser(userRequest);
+        return ResponseEntity.ok(userResponse);
+    }
+
     @PutMapping()
     public ResponseEntity<UserResponse> updateUser(@RequestBody UserRequest userRequest) {
         return ResponseEntity.ok(userService.updateUser(userRequest));
