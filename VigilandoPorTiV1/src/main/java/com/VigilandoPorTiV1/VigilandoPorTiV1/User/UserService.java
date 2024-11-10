@@ -2,6 +2,7 @@ package com.VigilandoPorTiV1.VigilandoPorTiV1.User;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -9,12 +10,12 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
     @Transactional
     public UserResponse updateUser(UserRequest userRequest) {
 
         User user = User.builder()
-                .id(userRequest.id)
                 .username(userRequest.getUsername())
                 .password(userRequest.getPassword())
                 .nombre(userRequest.getNombre())
@@ -47,5 +48,21 @@ public class UserService {
             return userDTO;
         }
         return null;
+    }
+
+    public UserResponse registerUser(UserRequest userRequest) {
+        User user = User.builder()
+                .username(userRequest.getUsername())
+                .password(passwordEncoder.encode(userRequest.getPassword()))
+                .nombre(userRequest.getNombre())
+                .apellido(userRequest.getApellido())
+                .email(userRequest.getEmail())
+                .dni(userRequest.getDni())
+                .telefono(userRequest.getTelefono())
+                .role(Role.USER)
+                .build();
+
+        userRepository.save(user);
+        return new UserResponse("Usuario registrado exitosamente");
     }
 }
