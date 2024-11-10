@@ -15,6 +15,9 @@ public class UserDTO {
     String password;
     String nombre;
     String apellido;
+    String departamento;
+    String provincia;
+    String distrito;
     String email;
     String dni;
     String telefono;

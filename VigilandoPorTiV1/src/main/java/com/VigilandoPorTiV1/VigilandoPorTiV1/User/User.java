@@ -34,6 +34,12 @@ public class User implements UserDetails {
 
     String apellido;
 
+    String departamento;
+
+    String provincia;
+
+    String distrito;
+
     String email;
 
     String dni;

@@ -20,13 +20,16 @@ public class UserService {
                 .password(userRequest.getPassword())
                 .nombre(userRequest.getNombre())
                 .apellido(userRequest.getApellido())
+                .departamento(userRequest.getDepartamento())
+                .provincia(userRequest.getProvincia())
+                .distrito(userRequest.getDistrito())
                 .email(userRequest.getEmail())
                 .dni(userRequest.getDni())
                 .telefono(userRequest.getTelefono())
                 .role(Role.USER)
                 .build();
 
-        userRepository.updateUser(user.id, user.username, user.password, user.nombre, user.apellido, user.email, user.dni, user.telefono);
+        userRepository.updateUser(user.id, user.username, user.password, user.nombre, user.apellido, user.departamento, user.provincia, user.distrito, user.email, user.dni, user.telefono);
 
         return new UserResponse("El usuario se registró exitosamente!");
     }
@@ -41,6 +44,9 @@ public class UserService {
                     .password(user.password)
                     .nombre(user.nombre)
                     .apellido(user.apellido)
+                    .departamento(user.departamento)
+                    .provincia(user.provincia)
+                    .distrito(user.distrito)
                     .email(user.email)
                     .dni(user.dni)
                     .telefono(user.telefono)
@@ -56,6 +62,9 @@ public class UserService {
                 .password(passwordEncoder.encode(userRequest.getPassword()))
                 .nombre(userRequest.getNombre())
                 .apellido(userRequest.getApellido())
+                .departamento(userRequest.getDepartamento())
+                .provincia(userRequest.getProvincia())
+                .distrito(userRequest.getDistrito())
                 .email(userRequest.getEmail())
                 .dni(userRequest.getDni())
                 .telefono(userRequest.getTelefono())
